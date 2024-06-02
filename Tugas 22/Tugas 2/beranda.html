@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Beranda The List Beauty</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMf8n14ktfy8WNYyIAdWvCR3LvtiukP9LkW5g8B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <style>
+      .text{
+          line-height: 0.3cm;
+          font-size: small;
+          font-style: bold;
+          color: #ffffff;
+      }
+      .text .nama{
+          font-family: "Poetsen One", sans-serif;
+      }
+      .text .slogan{
+          font-family: "Pacifico", cursive;
+      }
+      body {
+        font-family: "Domine", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        }
+      .carousel-item img {
+        min-height: 20cm;
+        min-width: 10cm;
+        object-fit: cover;
+      }
+      .colorful-text span {
+      font-size: 30px;
+      font-weight: bold;
+      display: inline-block;
+      animation: textshadow 0.5s infinite alternate, animationbounce 1s infinite alternate;
+      }
+
+.Merah {
+    color: rgb(94, 16, 73);
+}
+
+.Biru {
+    color: rgb(135, 57, 123);
+}
+
+.Pink {
+    color: rgb(128, 101, 128);
+}
+
+@keyframes textshadow {
+    0%, 100% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    }
+}
+
+@keyframes animationbounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Penundaan animasi pada setiap huruf */
+.colorful-text span:nth-child(1) { animation-delay: 0s; }
+.colorful-text span:nth-child(2) { animation-delay: 0.1s; }
+.colorful-text span:nth-child(3) { animation-delay: 0.2s; }
+.colorful-text span:nth-child(4) { animation-delay: 0.3s; }
+.colorful-text span:nth-child(5) { animation-delay: 0.4s; }
+.colorful-text span:nth-child(6) { animation-delay: 0.5s; }
+.colorful-text span:nth-child(7) { animation-delay: 0.6s; }
+.search-form input {
+
+      width: 100%;
+      padding: 10px 50px 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+    .search-form button {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #767676;
+      font-size: 18px;
+    }
+    .search-form button:hover {
+      color: #767676;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 20px;
+    }
+    .footer .social-icons a:hover {
+      color: #f0b7e8;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(178, 172, 212);">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="./gambar/logo5.png" alt="Logo" width="65px" height="auto" class="d-inline-block align-text-top">
+            <div class="text me-4 ms-0">
+              <div class="colorful-text ms-3" id="colorful-text">
+                <span class="Merah">T</span>
+                <span class="Biru">H</span>
+                <span class="Pink">E</span>
+                <span class="Merah">L</span>
+                <span class="Biru">I</span>
+                <span class="Pink">S</span>
+                <span class="Merah">T</span>
+                <span class="Biru">B</span>
+                <span class="Pink">E</span>
+                <span class="Merah">A</span>
+                <span class="Biru">U</span>
+                <span class="Pink">T</span>
+                <span class="Merah">Y</span>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                <li class="nav-item mx-4">
+                  <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item  mx-4"> <!--mengatur jarak navigasi-->
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+              </ul>
+              <form class="d-flex search-form" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </nav>
+<!-- Grid isi foto -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+      <div class="col">
+        <div class="card h-100">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 11cm; height: 20cm;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img src="./gambar/M2.jpg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M21.jpeg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M22.jpeg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M23.jpeg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title"><b>Make-Up Pernikahan</b></h5>
+              <p class="card-text">Makeup pernikahan adalah seni tata rias yang dirancang khusus untuk mempelai wanita (dan terkadang mempelai pria) pada hari pernikahan mereka. Tujuan utama dari makeup pernikahan adalah untuk mempercantik penampilan, meningkatkan fitur alami, dan menciptakan tampilan yang tahan lama serta fotogenik sepanjang acara.</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 11cm; height: 20cm;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img src="./gambar/M1.jpg" class="d-block w-10 h-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M11.jpg" class="d-block w-10 h-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M12.jpg" class="d-block w-10 h-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M13.jpg" class="d-block w-10 h-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M14.jpg" class="d-block w-10 h-10" alt="...">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title"><b>Make-Up Karakter</b></h5>
+              <p class="card-text">Makeup karakter adalah teknik tata rias yang digunakan untuk mengubah penampilan seseorang agar sesuai dengan karakter tertentu dalam film, teater, televisi, atau acara cosplay. Tujuan utama dari makeup karakter adalah menciptakan ilusi visual yang realistis atau fantastis, sehingga penonton dapat dengan mudah mengenali dan terhubung dengan karakter yang ditampilkan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 11cm; height: 20cm;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img src="./gambar/M3.jpg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M31.jpg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M32.jpg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./gambar/M33.jpeg" class="d-block w-10" alt="...">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title"><b>Make-Up Wisuda</b></h5>
+              <p class="card-text">Makeup wisuda adalah tata rias yang dirancang untuk menciptakan tampilan yang bersih, segar, dan alami dengan usaha dan produk yang minimal. Tujuan dari makeup simpel adalah meningkatkan kecantikan alami tanpa terlihat berlebihan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

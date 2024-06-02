@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The List Beauty</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMf8n14ktfy8WNYyIAdWvCR3LvtiukP9LkW5g8B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+      .text{
+          line-height: 0.3cm;
+          font-size: small;
+          font-style: bold;
+          color: #ffffff;
+      }
+      .text .nama{
+          font-family: "Poetsen One", sans-serif;
+      }
+      .text .slogan{
+          font-family: "Pacifico", cursive;
+      }
+      .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+        min-width: 100%;
+    }
+    .carousel-item img {
+        min-height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .colorful-text span {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    animation: textshadow 0.5s infinite alternate, animationbounce 1s infinite alternate;
+}
+
+.Merah {
+    color: rgb(94, 16, 73);
+}
+
+.Biru {
+    color: rgb(135, 57, 123);
+}
+
+.Pink {
+    color: rgb(128, 101, 128);
+}
+
+@keyframes textshadow {
+    0%, 100% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    }
+}
+
+@keyframes animationbounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Penundaan animasi pada setiap huruf */
+.colorful-text span:nth-child(1) { animation-delay: 0s; }
+.colorful-text span:nth-child(2) { animation-delay: 0.1s; }
+.colorful-text span:nth-child(3) { animation-delay: 0.2s; }
+.colorful-text span:nth-child(4) { animation-delay: 0.3s; }
+.colorful-text span:nth-child(5) { animation-delay: 0.4s; }
+.colorful-text span:nth-child(6) { animation-delay: 0.5s; }
+.colorful-text span:nth-child(7) { animation-delay: 0.6s; }
+.search-form input {
+      width: 100%;
+      padding: 10px 50px 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+    .search-form button {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #767676;
+      font-size: 18px;
+    }
+    .search-form button:hover {
+      color: #767676;
+    }
+    .footer {
+      background-color: hsl(278, 5%, 34%);
+      color: #ffffff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    .footer .social-icons a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(178, 172, 212);">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="./gambar/logo5.png" alt="Logo" width="65px" height="auto" class="d-inline-block align-text-top">
+            <div class="text me-4 ms-0">
+              <div class="colorful-text ms-3" id="colorful-text">
+                <span class="Merah">T</span>
+                <span class="Biru">H</span>
+                <span class="Pink">E</span>
+                <span class="Merah">L</span>
+                <span class="Biru">I</span>
+                <span class="Pink">S</span>
+                <span class="Merah">T</span>
+                <span class="Biru">B</span>
+                <span class="Pink">E</span>
+                <span class="Merah">A</span>
+                <span class="Biru">U</span>
+                <span class="Pink">T</span>
+                <span class="Merah">Y</span>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                <li class="nav-item mx-4">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item  mx-4"> <!--mengatur jarak navigasi-->
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+              </ul>
+              <form class="d-flex search-form" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </nav>
+<!-- Carousel untuk katalog web -->
+<div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Tugas 2/gambar/katalog.png" class=" w-800 h-400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Tugas 2/gambar/makeup.png" class=" w-800 h-400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Tugas 2/gambar/testi.png" class="w-800 h-400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../Tugas 2/gambar/services.png" class="w-800 h-400" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-3">
+          <h5>About Us</h5>
+          <p>Learn more about our story and how we strive to bring you the best beauty products.</p>
+        </div>
+        <!-- Customer Care Section -->
+        <div class="col-md-3">
+          <h5>Customer Care</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- Information Section -->
+        <div class="col-md-3">
+          <h5>Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Store Locator</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter and Social Media Section -->
+        <div class="col-md-3">
+          <h5>Subscribe to our Newsletter</h5>
+          <form action="#">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-light">Subscribe</button>
+          </form>
+          <h5 class="mt-4">Follow Us</h5>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">&copy; 2024 The List Beauty. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGz3b6aQONcO7uw4VxJt1EjtB5BbsLu8mt2V4l6ZR4p3r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-vZNGLb/tA4tbnF3jMQlhRQEprY7hChh2bEqH4uN3jB8T6AflmU9UU3Jr67frjcF8" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

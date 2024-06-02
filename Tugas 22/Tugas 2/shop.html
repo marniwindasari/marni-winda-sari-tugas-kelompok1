@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Shop The List Beauty</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMf8n14ktfy8WNYyIAdWvCR3LvtiukP9LkW5g8B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+      .text{
+          line-height: 0.3cm;
+          font-size: small;
+          font-style: bold;
+          color: #ffffff;
+      }
+      .text .nama{
+          font-family: "Poetsen One", sans-serif;
+      }
+      .text .slogan{
+          font-family: "Pacifico", cursive;
+      }
+      .carousel-item img {
+        min-height: 20cm;
+        min-width: 10cm;
+        object-fit: cover;
+    }
+    .colorful-text span {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    animation: textshadow 0.5s infinite alternate, animationbounce 1s infinite alternate;
+}
+
+.Merah {
+    color: rgb(94, 16, 73);
+}
+
+.Biru {
+    color: rgb(135, 57, 123);
+}
+
+.Pink {
+    color: rgb(128, 101, 128);
+}
+
+@keyframes textshadow {
+    0%, 100% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    }
+}
+
+@keyframes animationbounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Penundaan animasi pada setiap huruf */
+.colorful-text span:nth-child(1) { animation-delay: 0s; }
+.colorful-text span:nth-child(2) { animation-delay: 0.1s; }
+.colorful-text span:nth-child(3) { animation-delay: 0.2s; }
+.colorful-text span:nth-child(4) { animation-delay: 0.3s; }
+.colorful-text span:nth-child(5) { animation-delay: 0.4s; }
+.colorful-text span:nth-child(6) { animation-delay: 0.5s; }
+.colorful-text span:nth-child(7) { animation-delay: 0.6s; }
+.search-form input {
+
+      width: 100%;
+      padding: 10px 50px 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+    .search-form button {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #767676;
+      font-size: 18px;
+    }
+    .search-form button:hover {
+      color: #767676;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 20px;
+    }
+    .footer .social-icons a:hover {
+      color: #f0b7e8;
+    }
+    body {
+        font-family: "Domine", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        }
+        .product-container, .service-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .product-slider, .service-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            width: 100%;
+        }
+        .product-card, .service-card {
+            min-width: 200px;
+            min-height: 270px;
+            margin: 10px;
+            padding: 0px;
+            background-color: #fff;
+            border: 0px solid #ddd;
+            text-align: center;
+        }
+        .product-card img {
+            height: 170px;
+            width: 200px;
+        }
+        .service{
+            height: 100px;
+            width: 100px;
+        }
+        .service-card img{
+            height: 200px;
+            width: 200px;
+        }
+
+  </style>
+</head>
+<body style="background-color: rgb(134, 129, 161);">
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(178, 172, 212);">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="./gambar/logo5.png" alt="Logo" width="65px" height="auto" class="d-inline-block align-text-top">
+            <div class="text me-4 ms-0">
+              <div class="colorful-text ms-3" id="colorful-text">
+                <span class="Merah">T</span>
+                <span class="Biru">H</span>
+                <span class="Pink">E</span>
+                <span class="Merah">L</span>
+                <span class="Biru">I</span>
+                <span class="Pink">S</span>
+                <span class="Merah">T</span>
+                <span class="Biru">B</span>
+                <span class="Pink">E</span>
+                <span class="Merah">A</span>
+                <span class="Biru">U</span>
+                <span class="Pink">T</span>
+                <span class="Merah">Y</span>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                <li class="nav-item mx-4">
+                  <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item  mx-4"> <!--mengatur jarak navigasi-->
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+              </ul>
+              <form class="d-flex search-form" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </nav>
+<!-- card -->
+<section id="skincare">
+    <h2>Our Skincare Products</h2>
+    <div class="product-container">
+        <div class="product-slider" id="skincare-slider">
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s1.jpg" alt="Skincare Product 1">
+                <h3>Toner</h3>
+                <p>Rp25.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s2.jpg" alt="Skincare Product 2">
+                <h3>moisturizer</h3>
+                <p>Rp30.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s3.jpg" alt="Skincare Product 3">
+                <h3>Sunscreen</h3>
+                <p>Rp35.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s4.jpg" alt="Skincare Product 4">
+                <h3>Day Cream</h3>
+                <p>Rp40.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s5.jpg" alt="Skincare Product 5">
+                <h3>Night Cream</h3>
+                <p>Rp45.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s6.jpg" alt="Skincare Product 6">
+                <h3>Masker</h3>
+                <p>Rp50.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s7.jpg" alt="Skincare Product 7">
+                <h3>Serum</h3>
+                <p>Rp55.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s8.jpg" alt="Skincare Product 8">
+                <h3>Facial Wash</h3>
+                <p>Rp60.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s9.jpg" alt="Skincare Product 9">
+                <h3> Paket Scarlett</h3>
+                <p>Rp65.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s10.jpg" alt="Skincare Product 10">
+                <h3>Paket Skintific</h3>
+                <p>Rp70.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/s11.jpg" alt="Skincare Product 10">
+                <h3>Paket Wardah</h3>
+                <p>Rp70.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="makeup">
+    <h2>Our Makeup Products</h2>
+    <div class="product-container">
+        <div class="product-slider" id="makeup-slider">
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk1.jpg" alt="Makeup Product 1">
+                <h3>Make Over</h3>
+                <p>Rp20.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk2.jpg" alt="Makeup Product 2">
+                <h3>Dior</h3>
+                <p>Rp18.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk3.jpg" alt="Makeup Product 3">
+                <h3>Product 3</h3>
+                <p>Rp22.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk4.jpg" alt="Makeup Product 4">
+                <h3>Product 4</h3>
+                <p>Rp24.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk5.jpg" alt="Makeup Product 5">
+                <h3>Product 5</h3>
+                <p>Rp26.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk6.jpg" alt="Makeup Product 6">
+                <h3>Product 6</h3>
+                <p>Rp28.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk7.jpg" alt="Makeup Product 7">
+                <h3>Product 7</h3>
+                <p>Rp30.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk8.jpg" alt="Makeup Product 8">
+                <h3>Product 8</h3>
+                <p>Rp32.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk9.jpg" alt="Makeup Product 9">
+                <h3>Product 9</h3>
+                <p>Rp34.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+            <div class="product-card">
+                <img src="../Tugas 2/gambar/mk10.jpg" alt="Makeup Product 10">
+                <h3>Wardah</h3>
+                <p>Rp36.000</p>
+                <a href="" class="btn btn-primary">Belilah</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-slider" id="services-slider" >
+            <div class="service-card">
+                <img src="../Tugas 2/gambar/sr1.jpg" alt="Make-Up Artist">
+                <h3>Makeup Service</h3>
+                <p>Professional makeup for any occasion</p>
+                <a href="" class="btn btn-dark">Booking</a>
+            </div>
+            <div class="service-card">
+                <img src="../Tugas 2/gambar/sr3.jpg" alt="Skincare Consultation">
+                <h3>Skincare Consultation</h3>
+                <p>Personalized skincare advice and treatment plans</p>
+                <a href="" class="btn btn-dark">Booking</a>
+            </div>
+            <div class="service-card">
+                <img src="../Tugas 2/gambar/sr2.jpg" alt="Beauty Workshops">
+                <h3>Beauty Workshops</h3>
+                <p>Learn makeup and skincare techniques from experts</p>
+                <a href="" class="btn btn-dark">Booking</a>
+            </div>
+            <div class="service-card">
+                <img src="../Tugas 2/gambar/sr5.jpg" alt="Spa Treatments">
+                <h3>Spa Treatments</h3>
+                <p>Relaxing spa treatments to rejuvenate your skin</p>
+                <a href="" class="btn btn-dark">Booking</a>
+            </div>
+            <div class="service-card">
+                <img src="../Tugas 2/gambar/sr4.jpg" alt="Hair Styling">
+                <h3>Hair Styling</h3>
+                <p>Professional hair styling for any event</p>
+                <a href="" class="btn btn-dark">Booking</a>
+            </div>
+                <div class="service-card">
+                    <img src="../Tugas 2/gambar/sr6.jpg" alt="Nail Art">
+                    <h3>Nail Art</h3>
+                    <p>Professional nail art for any event</p>
+                    <a href="" class="btn btn-dark">Booking</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
